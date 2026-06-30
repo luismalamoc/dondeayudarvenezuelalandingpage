@@ -49,6 +49,13 @@ const portales = [
     href: 'https://efecto-red.com/',
   },
   {
+    tag: 'Salud mental',
+    title: 'Psicólogos Sin Fronteras Venezuela',
+    description:
+      'PSF Venezuela ofrece asistencia psicosocial gratuita a personas y comunidades afectadas por el terremoto: intervención en crisis, duelo y primeros auxilios psicológicos, también para venezolanos en el exterior. Coordinan por su Instagram (@psfvenezuela) y su blog psfvenezuela.wordpress.com.',
+    href: 'https://www.instagram.com/psfvenezuela/',
+  },
+  {
     tag: 'Cerca de ti',
     title: 'VZLA Ayuda',
     description: 'Pide o brinda ayuda cerca de ti, sin cuentas y al instante.',
@@ -536,7 +543,9 @@ const jsonLd = {
       <section class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6">
         <h2 class="text-2xl font-black text-navy">Información adicional</h2>
         <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-600">
-          Fuentes oficiales para verificar organizaciones y seguir la actividad sísmica.
+          Fuentes para verificar organizaciones, contrastar las cifras del terremoto y seguir la
+          actividad sísmica: organismos oficiales, periodismo independiente, derechos humanos e
+          internet libre.
         </p>
         <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {recursosOficiales.map((recurso) => <PortalCard {...recurso} />)}
@@ -572,20 +581,16 @@ const jsonLd = {
     <footer class="mt-4 border-t border-slate-200 bg-white">
       <div class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6">
         <p class="max-w-3xl text-xs leading-5 text-slate-400">
-          Este sitio fue{' '}
-          <a
-            href="https://github.com/luismalamoc/dondeayudarvenezuela"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="font-semibold text-slate-500 hover:text-navy">un directorio de campañas</a
-          > creado tras el terremoto. Para unir esfuerzos, ahora redirige a las plataformas con más
-          tráfico y mejor infraestructura. —
+          Este proyecto es 100% open source. No recibimos ni gestionamos donaciones: solo enlazamos
+          a canales oficiales de terceros. Puedes auditar todos los enlaces publicados aquí, revisar
+          cómo se construye el sitio y proponer cambios en el{' '}
           <a
             href="https://github.com/luismalamoc/dondeayudarvenezuelalandingpage"
             target="_blank"
             rel="noopener noreferrer"
-            class="font-semibold text-slate-500 hover:text-navy">Código fuente</a
-          >
+            class="font-semibold text-slate-500 hover:text-navy">repositorio público en GitHub</a
+          >. Verifica siempre el dominio antes de donar y, si detectas un enlace erróneo o
+          fraudulento, repórtalo.
         </p>
       </div>
     </footer>
