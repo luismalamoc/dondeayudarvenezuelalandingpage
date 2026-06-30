@@ -267,10 +267,30 @@ const jsonLd = {
   name: '¿Dónde ayudar a Venezuela?',
   url: site,
   description,
+  inLanguage: 'es',
+  publisher: {
+    '@type': 'Organization',
+    name: '¿Dónde ayudar a Venezuela?',
+    url: site,
+    logo: `${site}/android-chrome-512x512.png`,
+  },
+  about: {
+    '@type': 'Event',
+    name: 'Terremoto de Venezuela 2026',
+    startDate: '2026-06-24',
+    location: {
+      '@type': 'Place',
+      name: 'Venezuela',
+    },
+  },
   mainEntity: {
     '@type': 'ItemList',
-    itemListElement: [...acciones, ...portales, ...otrasDonaciones, ...recursosOficiales].map(
-      (item, index) => ({
+    itemListElement: [
+      ...acciones,
+      ...portales,
+      ...otrasDonaciones,
+      ...recursosOficiales,
+    ].map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       name: item.title,
@@ -287,6 +307,10 @@ const jsonLd = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <link rel="canonical" href={site} />
     <meta name="theme-color" content="#071a3d" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -297,15 +321,26 @@ const jsonLd = {
     <link rel="manifest" href="/site.webmanifest" />
 
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="¿Dónde ayudar a Venezuela?" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="¿Dónde ayudar a Venezuela? Directorio de ayuda tras el terremoto de 2026"
+    />
     <meta property="og:url" content={site} />
     <meta property="og:locale" content="es_VE" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    <meta
+      name="twitter:image:alt"
+      content="¿Dónde ayudar a Venezuela? Directorio de ayuda tras el terremoto de 2026"
+    />
 
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
