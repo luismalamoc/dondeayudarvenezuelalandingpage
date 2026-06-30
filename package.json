@@ -1,0 +1,45 @@
+{
+  "name": "dondeayudarvenezuelalandingpage",
+  "description": "Landing page estática con enlaces a plataformas oficiales de ayuda tras el terremoto de Venezuela (junio 2026): donar, reportar daños, denunciar, buscar personas e información oficial.",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "author": "Luis Alamo (luismalamoc)",
+  "homepage": "https://dondeayudarvenezuela.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luismalamoc/dondeayudarvenezuelalandingpage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luismalamoc/dondeayudarvenezuelalandingpage/issues"
+  },
+  "private": true,
+  "packageManager": "pnpm@11.8.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "astro": "astro",
+    "generate-types": "wrangler types"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "14.0.2",
+    "@astrojs/sitemap": "3.7.3",
+    "@tailwindcss/vite": "4.3.1",
+    "astro": "7.0.3",
+    "tailwindcss": "4.3.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.9",
+    "prettier": "3.9.4",
+    "prettier-plugin-astro": "0.14.1",
+    "typescript": "6.0.3",
+    "wrangler": "4.105.0"
+  }
+}

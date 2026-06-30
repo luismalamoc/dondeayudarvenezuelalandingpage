@@ -1,0 +1,9 @@
+# Configuración de pnpm para este proyecto (no es un monorepo: sin campo "packages").
+# Autoriza la ejecución de los scripts de build (postinstall) de estas dependencias.
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true
+minimumReleaseAgeExclude:
+  - prettier@3.9.4
+  - '@astrojs/cloudflare@14.0.2'
