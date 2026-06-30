@@ -4,27 +4,43 @@ interface Props {
   description: string
   href: string
   tag: string
+  variant?: 'default' | 'alerta'
+  cta?: string
 }
 
-const { title, description, href, tag } = Astro.props
+const { title, description, href, tag, variant = 'default', cta } = Astro.props
 const domain = new URL(href).hostname.replace(/^www\./, '')
+const isAlerta = variant === 'alerta'
+const ctaLabel = cta ?? (isAlerta ? 'Por qué evitarla' : 'Visitar')
 ---
 
 <a
   href={href}
   target="_blank"
   rel="noopener noreferrer"
-  class="group flex flex-col rounded-xl border border-slate-200 bg-white p-6 transition hover:border-navy hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy"
+  class={`group flex flex-col rounded-xl border p-6 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+    isAlerta
+      ? 'border-red-300 bg-red-50 hover:border-red-500 hover:shadow-lg focus-visible:outline-red-600'
+      : 'border-slate-200 bg-white hover:border-navy hover:shadow-lg focus-visible:outline-navy'
+  }`}
 >
   <span
-    class="mb-3 inline-flex w-fit items-center rounded-full bg-amarillo/30 px-3 py-1 text-xs font-bold tracking-wide text-navy uppercase"
+    class={`mb-3 inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-bold tracking-wide uppercase ${
+      isAlerta ? 'bg-red-600/15 text-red-700' : 'bg-amarillo/30 text-navy'
+    }`}
   >
     {tag}
   </span>
-  <h3 class="text-lg font-black text-navy">{title}</h3>
-  <p class="mt-2 flex-1 text-sm leading-6 text-slate-600">{description}</p>
-  <span class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-navy">
-    Visitar
+  <h3 class={`text-lg font-black ${isAlerta ? 'text-red-700' : 'text-navy'}`}>{title}</h3>
+  <p class={`mt-2 flex-1 text-sm leading-6 ${isAlerta ? 'text-red-900/80' : 'text-slate-600'}`}>
+    {description}
+  </p>
+  <span
+    class={`mt-4 inline-flex items-center gap-1 text-sm font-bold ${
+      isAlerta ? 'text-red-700' : 'text-navy'
+    }`}
+  >
+    {ctaLabel}
     <svg
       class="size-4 transition group-hover:translate-x-0.5"
       viewBox="0 0 24 24"
@@ -38,7 +54,11 @@ const domain = new URL(href).hostname.replace(/^www\./, '')
       <path d="M5 12h14M13 6l6 6-6 6"></path>
     </svg>
   </span>
-  <span class="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-slate-400">
+  <span
+    class={`mt-2 inline-flex items-center gap-1.5 text-xs font-medium ${
+      isAlerta ? 'text-red-400' : 'text-slate-400'
+    }`}
+  >
     <svg
       class="size-3.5"
       viewBox="0 0 24 24"

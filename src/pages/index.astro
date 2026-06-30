@@ -185,6 +185,16 @@ const otrasDonaciones = [
   },
 ]
 
+const advertencias = [
+  {
+    tag: 'Evitar',
+    title: 'Cruz Roja Venezolana',
+    description:
+      'Desde agosto de 2023, el Tribunal Supremo de Justicia intervino la Cruz Roja Venezolana, cesó a su directiva y designó una junta reestructuradora. Al perder su independencia frente al régimen, dejó de ser un canal humanitario neutral: te recomendamos no donar a través de ella.',
+    href: 'https://accesoalajusticia.org/intervencion-cruz-roja-otro-ejemplo-abuso-potestades-cautelares-sala-constitucional/',
+  },
+]
+
 const emergencias = [
   { label: 'Movistar', num: '911' },
   { label: 'Cantv (fijo)', num: '171' },
@@ -354,6 +364,17 @@ const jsonLd = {
             >cómo donar sin caer en fraude</a
           >.
         </p>
+      </section>
+
+      <section class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6">
+        <h2 class="text-2xl font-black text-red-700">Dónde NO donar</h2>
+        <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-600">
+          Organizaciones que perdieron su independencia. Te recomendamos evitarlas como canal de
+          donación.
+        </p>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {advertencias.map((item) => <PortalCard {...item} variant="alerta" />)}
+        </div>
       </section>
 
       <section class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6">
