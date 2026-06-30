@@ -6,22 +6,25 @@ interface Props {
   tag: string
   variant?: 'default' | 'alerta'
   cta?: string
+  instagram?: string
 }
 
-const { title, description, href, tag, variant = 'default', cta } = Astro.props
+const { title, description, href, tag, variant = 'default', cta, instagram } = Astro.props
 const domain = new URL(href).hostname.replace(/^www\./, '')
 const isAlerta = variant === 'alerta'
 const ctaLabel = cta ?? (isAlerta ? 'Por qué evitarla' : 'Visitar')
+const socialHost = instagram ? new URL(instagram).hostname.replace(/^www\./, '') : null
+const isX = socialHost === 'x.com' || socialHost === 'twitter.com'
+const socialHandle = instagram
+  ? `@${new URL(instagram).pathname.replace(/^\/+|\/+$/g, '')}`
+  : null
 ---
 
-<a
-  href={href}
-  target="_blank"
-  rel="noopener noreferrer"
-  class={`group flex flex-col rounded-xl border p-6 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+<div
+  class={`group relative flex flex-col rounded-xl border p-6 transition focus-within:shadow-lg ${
     isAlerta
-      ? 'border-red-300 bg-red-50 hover:border-red-500 hover:shadow-lg focus-visible:outline-red-600'
-      : 'border-slate-200 bg-white hover:border-navy hover:shadow-lg focus-visible:outline-navy'
+      ? 'border-red-300 bg-red-50 hover:border-red-500 hover:shadow-lg'
+      : 'border-slate-200 bg-white hover:border-navy hover:shadow-lg'
   }`}
 >
   <span
@@ -31,7 +34,16 @@ const ctaLabel = cta ?? (isAlerta ? 'Por qué evitarla' : 'Visitar')
   >
     {tag}
   </span>
-  <h3 class={`text-lg font-black ${isAlerta ? 'text-red-700' : 'text-navy'}`}>{title}</h3>
+  <h3 class={`text-lg font-black ${isAlerta ? 'text-red-700' : 'text-navy'}`}>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="after:absolute after:inset-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+    >
+      {title}
+    </a>
+  </h3>
   <p class={`mt-2 flex-1 text-sm leading-6 ${isAlerta ? 'text-red-900/80' : 'text-slate-600'}`}>
     {description}
   </p>
@@ -54,6 +66,40 @@ const ctaLabel = cta ?? (isAlerta ? 'Por qué evitarla' : 'Visitar')
       <path d="M5 12h14M13 6l6 6-6 6"></path>
     </svg>
   </span>
+  {
+    instagram && (
+      <a
+        href={instagram}
+        target="_blank"
+        rel="noopener noreferrer"
+        class={`relative z-10 mt-3 inline-flex w-fit items-center gap-1.5 text-xs font-semibold transition hover:underline ${
+          isAlerta ? 'text-red-600 hover:text-red-700' : 'text-navy hover:text-navy-700'
+        }`}
+      >
+        {isX ? (
+          <svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        ) : (
+          <svg
+            class="size-3.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        )}
+        {socialHandle}
+      </a>
+    )
+  }
   <span
     class={`mt-2 inline-flex items-center gap-1.5 text-xs font-medium ${
       isAlerta ? 'text-red-400' : 'text-slate-400'
@@ -74,5 +120,5 @@ const ctaLabel = cta ?? (isAlerta ? 'Por qué evitarla' : 'Visitar')
     </svg>
     {domain}
   </span>
-</a>
+</div>
 
