@@ -98,6 +98,13 @@ pnpm build
 5. Tras el primer despliegue, conecta el dominio en **Custom domains** y apunta
    `dondeayudarvenezuela.com` a Cloudflare Pages.
 
+### Despliegue manual con Wrangler
+
+```bash
+npx astro build && npx wrangler dev     # previsualizar el build en el runtime de Cloudflare
+npx astro build && npx wrangler deploy  # construir y desplegar en Cloudflare
+```
+
 ## Licencia
 
 [MIT](LICENSE) © 2026 Luis Alamo ([luismalamoc](https://github.com/luismalamoc))
