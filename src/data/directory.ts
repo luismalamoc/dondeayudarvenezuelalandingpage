@@ -154,6 +154,35 @@ export const portales = [
     href: 'https://terremotove.com/',
     instagram: 'https://x.com/AccesoLibreRed',
   },
+  {
+    tag: 'Acopios y refugios',
+    title: 'AcopioVE',
+    description:
+      'Mapa colaborativo con más de 600 centros de acopio y refugios temporales tras el terremoto. Ubica el punto más cercano, registra un nuevo centro u ofrece "techo solidario" para hospedar a familias damnificadas. Muestra además la intensidad sísmica sentida por zona.',
+    href: 'https://acopiove.org/',
+  },
+  {
+    tag: 'Desaparecidos',
+    title: 'Venezuela Te Busca',
+    description:
+      'Registro ciudadano, voluntario y sin fines de lucro para localizar a personas desaparecidas tras el terremoto. Reúne miles de reportes de personas por localizar y ya localizadas, cruzando información de decenas de fuentes y hospitales. No vende ni comparte tus datos.',
+    href: 'https://venezuelatebusca.com/',
+  },
+  {
+    tag: 'Mascotas',
+    title: 'HuellaScan — S.O.S. Terremoto',
+    description:
+      'Red de emergencia para reportar y buscar mascotas perdidas o en refugio tras el terremoto. Publica foto, zona y contacto, consulta la galería de casos y el mapa "Se busca". Del servicio de perfiles digitales QR HuellaScan.',
+    href: 'https://www.huellascan.com/terremoto',
+    instagram: 'https://instagram.com/huella_scan',
+  },
+  {
+    tag: 'Mascotas',
+    title: 'Mi Gente Ve — Patitas a Salvo',
+    description:
+      'Red comunitaria para reencontrar mascotas perdidas, encontradas o con necesidad médica tras el terremoto. Busca por zona en el mapa, reporta casos y accede a un directorio de clínicas veterinarias 24 h y fundaciones de rescate animal.',
+    href: 'https://migenteve.com/',
+  },
 ] satisfies PortalRaw[]
 
 export const otrasDonaciones = [
