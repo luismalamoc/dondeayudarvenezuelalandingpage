@@ -108,6 +108,14 @@ export const portales = [
     href: 'https://ayudaencamino.com/',
   },
   {
+    tag: 'Centros de acopio',
+    title: 'Te Ayudo Venezuela',
+    description:
+      'App social que reúne cientos de centros de acopio dentro y fuera de Venezuela y muestra en tiempo real qué insumos necesita cada uno. Busca por zona, mira el mapa, contáctalos directamente y accede a recursos de desaparecidos y emergencias. Iniciativa humanitaria que no administra los insumos.',
+    href: 'https://teayudovenezuela.org/',
+    instagram: 'https://www.instagram.com/sisnova.io/',
+  },
+  {
     tag: 'Mapa de ayuda',
     title: 'Hazlo Hoy — Venezuela Ayuda',
     description:
