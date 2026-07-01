@@ -40,6 +40,8 @@ pnpm install     # instalar dependencias
 pnpm dev         # servidor de desarrollo (http://localhost:4321)
 pnpm build       # generar el sitio estático en dist/
 pnpm preview     # previsualizar el build de producción
+pnpm preview:cf  # build + previsualizar en el runtime de Cloudflare (Wrangler)
+pnpm deploy      # build + desplegar en Cloudflare (Wrangler)
 pnpm check       # validación de tipos y diagnósticos de Astro
 pnpm format      # formatear el código con Prettier
 ```
@@ -112,8 +114,8 @@ pnpm build
 ### Despliegue manual con Wrangler
 
 ```bash
-npx astro build && npx wrangler dev     # previsualizar el build en el runtime de Cloudflare
-npx astro build && npx wrangler deploy  # construir y desplegar en Cloudflare
+pnpm preview:cf   # construir y previsualizar el build en el runtime de Cloudflare
+pnpm deploy       # construir y desplegar en Cloudflare
 ```
 
 ## Licencia
