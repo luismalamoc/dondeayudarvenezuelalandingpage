@@ -535,6 +535,13 @@ export const informacionAdicional = [
     href: 'https://acceso-libre.org/',
     instagram: 'https://x.com/AccesoLibreRed',
   },
+  {
+    tag: 'Enciclopedia',
+    title: 'Wikipedia — Terremotos de Venezuela de 2026',
+    description:
+      'Artículo enciclopédico que documenta los terremotos del 24 de junio de 2026 en Venezuela: magnitud, epicentro, daños, víctimas y respuesta. Reúne datos de múltiples fuentes con referencias verificables para entender el contexto de la emergencia.',
+    href: 'https://es.wikipedia.org/wiki/Terremotos_de_Venezuela_de_2026',
+  },
 ] satisfies PortalRaw[]
 
 function domainFromHref(href: string): string {
