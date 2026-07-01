@@ -34,13 +34,10 @@ const jsonLd = {
     logo: `${site}/android-chrome-512x512.png`,
   },
   about: {
-    '@type': 'Event',
+    '@type': 'Thing',
     name: 'Terremoto de Venezuela 2026',
-    startDate: '2026-06-24',
-    location: {
-      '@type': 'Place',
-      name: 'Venezuela',
-    },
+    description:
+      'Terremoto ocurrido el 24 de junio de 2026 en Venezuela y la respuesta ciudadana para ayudar a las personas afectadas.',
   },
   mainEntity: {
     '@type': 'ItemList',
@@ -132,7 +129,15 @@ const jsonLd = {
     <main class="flex-1">
       <section class="mx-auto w-full max-w-5xl px-4 pt-12 pb-8 sm:px-6 sm:pt-16">
         <p class="text-sm font-bold tracking-wide text-slate-500 uppercase">
-          Meta-sitio · Terremoto 24 de junio de 2026
+          Meta-sitio · Terremoto 24 de junio de 2026 ·{' '}
+          <a
+            href="https://es.wikipedia.org/wiki/Terremotos_de_Venezuela_de_2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-navy underline decoration-slate-300 underline-offset-2 transition hover:decoration-navy"
+          >
+            Ver detalles
+          </a>
         </p>
         <h1 class="mt-3 text-3xl leading-tight font-black text-navy sm:text-5xl">
           Unimos esfuerzos para ayudar a Venezuela
