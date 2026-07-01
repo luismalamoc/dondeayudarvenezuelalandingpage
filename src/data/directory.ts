@@ -146,6 +146,14 @@ export const portales = [
     href: 'https://apoyavenezuela.org/',
     instagram: 'https://www.instagram.com/apoyavenezuela.app/',
   },
+  {
+    tag: 'Mapa ciudadano',
+    title: 'terremotoVE',
+    description:
+      'Mapa colaborativo de Acceso Libre que documenta edificios colapsados y personas desaparecidas tras el terremoto para coordinar a familias, rescatistas y organismos de respuesta. Cualquiera puede reportar en minutos y sin crear cuenta; incluye números de emergencia y un directorio de recursos. Publica nombres y cédulas solo cuando es indispensable y explica en su política de datos cómo protege esa información.',
+    href: 'https://terremotove.com/',
+    instagram: 'https://x.com/AccesoLibreRed',
+  },
 ] satisfies PortalRaw[]
 
 export const otrasDonaciones = [
@@ -489,6 +497,14 @@ export const informacionAdicional = [
       'ONG venezolana de verificación e investigación digital (OSINT). Desmiente la desinformación sobre el terremoto —como las cifras infladas de fallecidos o el “doblete sísmico”— para que decidas y dones con datos reales, no con rumores ni mentiras.',
     href: 'https://www.cazadores.info/',
     instagram: 'https://www.instagram.com/cazamosfakenews/',
+  },
+  {
+    tag: 'Derechos digitales',
+    title: 'Acceso Libre',
+    description:
+      'Organización venezolana que defiende la libertad de expresión, la privacidad y el acceso a la información en internet frente a la vigilancia y la censura del régimen. Investiga bloqueos, forma a las comunidades en seguridad digital y está detrás del mapa ciudadano terremotoVE, con una política de datos que detalla cómo protege la información de las personas afectadas.',
+    href: 'https://acceso-libre.org/',
+    instagram: 'https://x.com/AccesoLibreRed',
   },
 ] satisfies PortalRaw[]
 
