@@ -468,6 +468,14 @@ export const otrasDonaciones = [
     href: 'https://www.caf.com/fondo-venezuela',
     instagram: 'https://www.instagram.com/agendacaf/',
   },
+  {
+    tag: 'Gotas de Esperanza',
+    title: 'Llamado urgente por el terremoto',
+    description:
+      'Campaña de la fundación Gotas de Esperanza Venezuela, con un centro de acopio en Guanare, para llevar ayuda directa a las familias afectadas por el terremoto: agua potable, alimentos, kits de higiene, medicinas y primeros auxilios, y alojamiento temporal para quienes lo perdieron todo.',
+    href: 'https://www.gofundme.com/f/llamado-urgente-por-terremoto-para-familias-en-venezuela',
+    instagram: 'https://www.instagram.com/gotasevzla',
+  },
 ] satisfies PortalRaw[]
 
 export const advertencias = [
@@ -546,6 +554,14 @@ export const informacionAdicional = [
     instagram: 'https://www.instagram.com/abc_es/',
   },
   {
+    tag: 'Opinión',
+    title: 'La Gran Aldea',
+    description:
+      'Artículo de La Gran Aldea, «La rebelión humanitaria»: el terremoto del 24 de junio paralizó la agenda política, pero aceleró la capacidad de los venezolanos para organizarse y auxiliar de forma espontánea a las zonas afectadas, desafiando las trabas de un poder que intenta centralizar y apropiarse de la ayuda.',
+    href: 'https://laldea.site/2026/07/01/la-rebelion-humanitaria/',
+    instagram: 'https://www.instagram.com/lagranaldea/',
+  },
+  {
     tag: 'Denuncia',
     title: 'Un Mundo Sin Mordaza',
     description:
@@ -575,14 +591,6 @@ export const informacionAdicional = [
       'Medio digital venezolano que cubre la emergencia con la verdad por delante. En este reporte, uno de los líderes de los “topos” mexicanos denuncia que en VTV le pidieron agradecer y repetir un guion a favor de la interina Delcy Rodríguez; su respuesta: “No soy político, soy rescatista”.',
     href: 'https://www.instagram.com/p/DaIX-_8sDBA/',
     instagram: 'https://www.instagram.com/araguaneynews/',
-  },
-  {
-    tag: 'Noticias',
-    title: 'Válvula Política',
-    description:
-      'Medio venezolano que sigue de cerca el terremoto: cifras de fallecidos en Tucacas, listados de pacientes en hospitales de Caracas y la exigencia de luto nacional y transparencia informativa al gobierno.',
-    href: 'https://valvulapolitica.com/concluyen-labores-de-busqueda-en-tucacas-se-eleva-a-12-la-cifra-de-fallecidos-tras-colapso-de-edificacion/',
-    instagram: 'https://www.instagram.com/valvulapolitica/',
   },
   {
     tag: 'Verificación',
@@ -644,6 +652,7 @@ export const prensa = [
       'Periodista y comunicador enfocado en libertad de expresión; cubre el terremoto y la situación de Venezuela en X y su canal de YouTube.',
     href: 'https://x.com/MelanioBar',
     x: 'https://x.com/MelanioBar',
+    instagram: 'https://www.instagram.com/melaniobar',
     youtube: 'https://www.youtube.com/@melaniobar',
   },
   {
@@ -729,16 +738,6 @@ export const prensa = [
     href: 'https://www.youtube.com/@bowerytv',
     youtube: 'https://www.youtube.com/@bowerytv',
     x: 'https://x.com/GastonLevar',
-  },
-  {
-    tag: 'Periodista',
-    title: 'Maibort Petit',
-    description:
-      'Investigadora y periodista que cubre la corrupción y la actualidad de Venezuela, incluida la emergencia del terremoto; publica en X, YouTube e Instagram.',
-    href: 'https://x.com/maibortpetit',
-    x: 'https://x.com/maibortpetit',
-    youtube: 'https://www.youtube.com/channel/UCUC9reOFgPwTagT4L5tpTyg',
-    instagram: 'https://www.instagram.com/maibortpetit/',
   },
   {
     tag: 'Periodista',
