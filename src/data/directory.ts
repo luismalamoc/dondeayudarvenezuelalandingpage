@@ -686,22 +686,14 @@ export const prensa = [
     youtube: 'https://www.youtube.com/@SergioNovelliOficial',
   },
   {
-    tag: 'Cobertura en vivo',
-    title: 'Venezuela EN VIVO (Santiago Rafael)',
-    description:
-      'Canal de Santiago Rafael, politólogo que transmite en vivo durante horas la cobertura del terremoto y la actualidad venezolana en YouTube.',
-    href: 'https://www.youtube.com/@VenezuelaENVIVO11',
-    youtube: 'https://www.youtube.com/@VenezuelaENVIVO11',
-    x: 'https://x.com/SantiagoRafa11',
-  },
-  {
     tag: 'Periodista',
     title: 'Carla Angola',
     description:
-      'Periodista y presentadora que cubre la actualidad de Venezuela y la emergencia del terremoto; activa en X e Instagram.',
+      'Periodista y presentadora que cubre la actualidad de Venezuela y la emergencia del terremoto; activa en X, Instagram y su canal de YouTube.',
     href: 'https://x.com/carlaangola',
     x: 'https://x.com/carlaangola',
     instagram: 'https://www.instagram.com/carlaangola/',
+    youtube: 'https://www.youtube.com/@carlaangolaoficial',
   },
   {
     tag: 'Periodista',
@@ -731,15 +723,6 @@ export const prensa = [
     socials: ['https://www.instagram.com/marivalecomunica/'],
   },
   {
-    tag: 'Cobertura en vivo',
-    title: 'Bowery Newsroom - Guarimba Digital',
-    description:
-      'Proyecto de streaming de Gaston Levar (BoweryTV), autor de "El Poder del Streaming", que transmite en vivo durante horas la cobertura del terremoto y la actualidad de Venezuela en YouTube.',
-    href: 'https://www.youtube.com/@bowerytv',
-    youtube: 'https://www.youtube.com/@bowerytv',
-    x: 'https://x.com/GastonLevar',
-  },
-  {
     tag: 'Periodista',
     title: 'Luis Carlos Díaz',
     description:
@@ -755,6 +738,25 @@ export const prensa = [
     href: 'https://vpitv.com/destacados/vpitv-en-vivo/',
     youtube: 'https://www.youtube.com/@VPITVENVIVO',
     instagram: 'https://www.instagram.com/vpitv',
+  },
+  {
+    tag: 'Cobertura en vivo',
+    title: 'EVTV',
+    description:
+      'Medio venezolano que transmite en vivo la cobertura del terremoto y la actualidad del país en YouTube, con presencia en Instagram y su sitio web.',
+    href: 'https://evtv.online/',
+    website: 'https://evtv.online/',
+    youtube: 'https://www.youtube.com/@evtv',
+    instagram: 'https://www.instagram.com/evtvmiami/',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Miguel Contigo',
+    description:
+      'Comunicador que informa sobre la actualidad de Venezuela y la emergencia del terremoto; activo en X y su canal de YouTube.',
+    href: 'https://x.com/MiguelContigo',
+    x: 'https://x.com/MiguelContigo',
+    youtube: 'https://www.youtube.com/@MiguelContigo',
   },
 ] satisfies PeriodistaRaw[]
 
