@@ -16,3 +16,29 @@ body {
   font-family:
     ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
+
+@keyframes directory-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.directory-panel {
+  animation: directory-in 160ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .directory-panel {
+    animation: none;
+  }
+}
+
+[data-collapsible][data-collapsed='true'] > *:nth-child(n + 4) {
+  display: none;
+}
+
