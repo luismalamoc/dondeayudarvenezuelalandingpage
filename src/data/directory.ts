@@ -116,6 +116,14 @@ export const portales = [
     instagram: 'https://www.instagram.com/sisnova.io/',
   },
   {
+    tag: 'Donación física',
+    title: 'Donamos Venezuela',
+    description:
+      'Conecta productos donados, personas que pueden trasladarlos y centros que los reciben. Publica lo que tienes o una necesidad, ofrece una ruta de transporte y coordina la entrega; cada donación se revisa y valida. No maneja dinero ni procesa pagos.',
+    href: 'https://www.donamosvenezuela.com/',
+    instagram: 'https://www.instagram.com/donamosvenezuela/',
+  },
+  {
     tag: 'Mapa de ayuda',
     title: 'Hazlo Hoy — Venezuela Ayuda',
     description:
@@ -349,6 +357,14 @@ export const otrasDonaciones = [
     href: 'https://donate.cadena.ngo/campaign/815508/donate',
     instagram: 'https://www.instagram.com/cadenainternational/',
   },
+  {
+    tag: 'Rescate USAR',
+    title: 'Bomberos de Chile',
+    description:
+      'Los Bomberos de Chile son 100% voluntarios y su equipo USAR BoCH está desplegado en Venezuela: tras el terremoto localizaron con vida a personas atrapadas bajo los escombros. Equipar a un bombero es costoso y en buena parte lo financian ellos mismos; tu aporte ayuda a sostener esa labor.',
+    href: 'https://donarabomberos.cl/',
+    instagram: 'https://www.instagram.com/bomberoschileoficial/',
+  },
 ] satisfies PortalRaw[]
 
 export const advertencias = [
@@ -425,6 +441,22 @@ export const informacionAdicional = [
       'Organización venezolana que defiende la libertad de expresión y el derecho a la información. Documenta la censura y los ataques a la prensa, clave para que las cifras y necesidades reales del terremoto no queden silenciadas por el régimen.',
     href: 'https://sinmordaza.org/',
     instagram: 'https://www.instagram.com/sinmordaza/',
+  },
+  {
+    tag: 'Noticias',
+    title: 'El Estímulo',
+    description:
+      'Medio venezolano con una sección dedicada al terremoto: balance de víctimas, labores de búsqueda y rescate, refugios, servicios que se reactivan, guías de salud y cómo donar de forma segura. Útil para seguir la emergencia con datos verificados.',
+    href: 'https://elestimulo.com/',
+    instagram: 'https://www.instagram.com/elestimulo/',
+  },
+  {
+    tag: 'Rescate urbano',
+    title: 'USAR Bomberos de Chile',
+    description:
+      'Página oficial del grupo de Búsqueda y Rescate Urbano (USAR) de Bomberos de Chile, acreditado bajo la metodología INSARAG. Su equipo se desplegó en Venezuela tras el terremoto para las labores de búsqueda y rescate; aquí puedes seguir su trabajo y noticias.',
+    href: 'https://www.bomberos.cl/usar',
+    instagram: 'https://www.instagram.com/bomberoschileoficial/',
   },
   {
     tag: 'Noticias',
