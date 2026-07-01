@@ -212,7 +212,7 @@ export default function Directory({ items }: DirectoryProps) {
           value={query}
           onChange={handleQueryChange}
           onFocus={() => setOpen(true)}
-          placeholder="Buscar por título…"
+          placeholder="Buscar…"
           className="w-48 rounded-full border border-slate-200 bg-lienzo py-2 pr-3 pl-9 text-sm text-slate-800 transition placeholder:text-slate-400 focus-visible:border-navy focus-visible:bg-white focus-visible:outline-none lg:w-64"
         />
       </label>
@@ -269,7 +269,7 @@ export default function Directory({ items }: DirectoryProps) {
                   type="search"
                   value={query}
                   onChange={handleQueryChange}
-                  placeholder="Buscar por título…"
+                  placeholder="Buscar…"
                   className="w-full rounded-full border border-slate-200 bg-lienzo py-2.5 pr-3 pl-10 text-base text-slate-800 placeholder:text-slate-400 focus-visible:border-navy focus-visible:bg-white focus-visible:outline-none"
                 />
               </label>
