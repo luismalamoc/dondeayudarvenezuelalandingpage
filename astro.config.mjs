@@ -10,7 +10,15 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   site: 'https://dondeayudarvenezuela.com',
   output: 'static',
-  integrations: [sitemap(), react()],
+  integrations: [
+    sitemap({
+      serialize(item) {
+        item.lastmod = new Date().toISOString()
+        return item
+      },
+    }),
+    react(),
+  ],
 
   vite: {
     plugins: [tailwindcss()],
