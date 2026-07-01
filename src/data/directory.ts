@@ -52,12 +52,6 @@ export const acciones = [
     description:
       'Conéctate gratis por WhatsApp con profesionales voluntarios: salud mental, médicos, ingenieros, alojamiento temporal y apoyo a niños, dentro y fuera de Venezuela.',
     href: 'https://efecto-red.com/',
-  },
-  {
-    title: 'Yummy Héroes',
-    description:
-      'Traslados gratis para quienes están en primera línea: médicos, bomberos, policías, rescatistas, Protección Civil, periodistas y más, con descuento automático de hasta $10.',
-    href: 'https://heroes.yummyrides.com/',
     instagram: 'https://www.instagram.com/yummyridesvzla/',
   },
 ] satisfies AccionRaw[]
@@ -197,6 +191,14 @@ export const portales = [
       'Herramienta humanitaria sin fines de lucro que muestra en tiempo real los insumos que necesitan hospitales, refugios y comunidades verificados tras el terremoto. Es de solo lectura: revisa qué hace falta en cada punto y, si puedes, llévalo directamente.',
     href: 'https://www.demanoenmanove.org/',
   },
+  {
+    tag: 'Primera línea',
+    title: 'Yummy Héroes',
+    description:
+      'Traslados gratis para quienes están en primera línea: médicos, bomberos, policías, rescatistas, Protección Civil, periodistas y más, con descuento automático de hasta $10.',
+    href: 'https://heroes.yummyrides.com/',
+    instagram: 'https://www.instagram.com/yummyridesvzla/',
+  },
 ] satisfies PortalRaw[]
 
 export const otrasDonaciones = [
@@ -255,6 +257,7 @@ export const otrasDonaciones = [
       'Campaña de la Asociación Conexión Segura y Libre (VE sin Filtro) para desplegar puntos de conexión a internet y recarga de celulares en Venezuela. Es clave porque el régimen bloquea sitios de internet libre, aislando a quienes coordinan rescates y buscan a sus familiares.',
     href: 'https://www.gofundme.com/f/internet-for-rescuers-and-earthquake-victims-in-venezuela',
     instagram: 'https://x.com/conexionsegura',
+    socials: ['https://x.com/vesinfiltro', 'https://vesinfiltro.org/', 'https://www.instagram.com/conexion_segura/'],
   },
   {
     tag: 'Bitcoin',
@@ -457,6 +460,14 @@ export const otrasDonaciones = [
     href: 'https://crisisrelief.un.org/en/donate-venezuela-crisis',
     instagram: 'https://www.instagram.com/ocha_venezuela/',
   },
+  {
+    tag: 'CAF',
+    title: 'Fondo Venezuela',
+    description:
+      'Fondo de la CAF (Banco de Desarrollo de América Latina y el Caribe) para canalizar donaciones hacia la atención de la emergencia por el terremoto y la recuperación de las comunidades afectadas en Venezuela.',
+    href: 'https://www.caf.com/fondo-venezuela',
+    instagram: 'https://www.instagram.com/agendacaf/',
+  },
 ] satisfies PortalRaw[]
 
 export const advertencias = [
@@ -500,54 +511,54 @@ export const informacionAdicional = [
     description:
       'Organización benéfica de cartografía humanitaria. A petición de la ONU (UNDAC) envió cartógrafos hispanohablantes a Venezuela para producir mapas del terremoto —densidad de población, daños en edificios, hospitales activos e intensidad sísmica— que orientan a los equipos de búsqueda y rescate y la entrega de ayuda.',
     href: 'https://maps.mapaction.org/event/2026-ven-001',
-    x: 'https://x.com/mapaction',
-  },
-  {
-    tag: 'Internet libre',
-    title: 'Conexión Segura y Libre',
-    description:
-      'Organización que documenta y combate la censura en internet en Venezuela. El régimen bloquea sitios de información independiente y herramientas de comunicación, lo que dificulta coordinar la ayuda tras el terremoto.',
-    href: 'https://conexionsegura.org/',
-    instagram: 'https://www.instagram.com/conexion_segura/',
-  },
-  {
-    tag: 'Censura',
-    title: 'VE sin Filtro',
-    description:
-      'Proyecto que monitorea en tiempo real los bloqueos a sitios web, redes sociales y servicios en Venezuela, evidenciando las restricciones del régimen al acceso libre a internet.',
-    href: 'https://vesinfiltro.org/',
-    instagram: 'https://x.com/vesinfiltro',
+    instagram: 'https://x.com/mapaction',
   },
   {
     tag: 'Derechos humanos',
-    title: 'PROVEA — Informe 2025',
+    title: 'PROVEA',
     description:
-      'PROVEA, ONG venezolana de derechos humanos con más de 37 años, documenta con datos verificados la crisis previa al terremoto: salud, agua y alimentación colapsadas que hoy agravan la emergencia. Útil para exigir transparencia en las cifras de víctimas y en la ayuda.',
-    href: 'https://provea.org/informe2025/',
-    instagram: 'https://www.instagram.com/proveaong/',
+      'Tras visitar La Guaira (Catia La Mar y Caraballeda), PROVEA documenta la respuesta al terremoto: destaca la labor de la sociedad civil, los voluntarios y las agencias internacionales, y alerta que no observó ningún esfuerzo estatal por proveer agua o alimentos. Advierte que la excesiva militarización y el despliegue de la DGCIM, el SEBIN y el CONAS puede obstaculizar el socorro y derivar en abusos, como ya ocurrió en el deslave de Vargas de 1999.',
+    href: 'https://x.com/_Provea/status/2072316977096339645',
+    instagram: 'https://x.com/_Provea',
+  },
+  {
+    tag: 'Derechos humanos',
+    title: 'Amnistía Internacional',
+    description:
+      'Amnistía Internacional exige que los derechos humanos guíen la respuesta al terremoto: ayuda humanitaria sin discriminación, información veraz y protección de las personas más vulnerables. Un llamado a que la emergencia no se use para silenciar ni excluir.',
+    href: 'https://www.amnistia.org/ve/noticias/2026/06/30235/venezuela-los-derechos-humanos-deben-guiar-la-respuesta-al-terremoto',
+    instagram: 'https://www.instagram.com/amnistia',
   },
   {
     tag: 'Análisis',
     title: 'Caracas Chronicles',
     description:
       'Medio independiente que cubre en inglés la realidad venezolana y el terremoto, una fuente para entender el contexto y contrastar las cifras oficiales de daños y víctimas frente a la propaganda del régimen.',
-    href: 'https://www.caracaschronicles.com/',
+    href: 'https://www.caracaschronicles.com/2026/06/25/key-information-about-venezuelas-state-of-emergency/',
     instagram: 'https://www.instagram.com/caracaschron/',
   },
   {
-    tag: 'Libertad de expresión',
-    title: 'Espacio Público / Sin Mordaza',
+    tag: 'Análisis',
+    title: 'ABC — Terremotos y economía',
     description:
-      'Organización venezolana que defiende la libertad de expresión y el derecho a la información. Documenta la censura y los ataques a la prensa, clave para que las cifras y necesidades reales del terremoto no queden silenciadas por el régimen.',
-    href: 'https://sinmordaza.org/',
-    instagram: 'https://www.instagram.com/sinmordaza/',
+      'Reportaje de ABC (España), diario para el que reporta David Alandete, sobre cómo los terremotos del 24 de junio entierran la esperanza de recuperación económica de Venezuela.',
+    href: 'https://www.abc.es/internacional/terremotos-entierran-esperanza-recuperacion-economica-venezolana-20260701185517-nt.html',
+    instagram: 'https://www.instagram.com/abc_es/',
+  },
+  {
+    tag: 'Denuncia',
+    title: 'Un Mundo Sin Mordaza',
+    description:
+      'Un Mundo Sin Mordaza denuncia la persecución del régimen contra los voluntarios de la emergencia: la Red de Voluntarios Intérpretes, que coordinaba el apoyo lingüístico tras el terremoto, tuvo que suspender sus operaciones y borrar su base de datos ante el hostigamiento del Sebin y la Dgcim a traductores y a las brigadas de rescate internacionales.',
+    href: 'https://x.com/Sinmordaza/status/2072376962358915313',
+    instagram: 'https://x.com/Sinmordaza',
   },
   {
     tag: 'Noticias',
     title: 'El Estímulo',
     description:
       'Medio venezolano con una sección dedicada al terremoto: balance de víctimas, labores de búsqueda y rescate, refugios, servicios que se reactivan, guías de salud y cómo donar de forma segura. Útil para seguir la emergencia con datos verificados.',
-    href: 'https://elestimulo.com/',
+    href: 'https://elestimulo.com/terremoto-en-venezuela/',
     instagram: 'https://www.instagram.com/elestimulo/',
   },
   {
@@ -561,8 +572,8 @@ export const informacionAdicional = [
     tag: 'Noticias',
     title: 'Araguaney News',
     description:
-      'Medio digital venezolano de actualidad, análisis y opinión que cubre la emergencia del terremoto y la crisis del país con la verdad por delante, frente al silencio de los medios oficiales.',
-    href: 'https://araguaneynews.com/',
+      'Medio digital venezolano que cubre la emergencia con la verdad por delante. En este reporte, uno de los líderes de los “topos” mexicanos denuncia que en VTV le pidieron agradecer y repetir un guion a favor de la interina Delcy Rodríguez; su respuesta: “No soy político, soy rescatista”.',
+    href: 'https://www.instagram.com/p/DaIX-_8sDBA/',
     instagram: 'https://www.instagram.com/araguaneynews/',
   },
   {
@@ -570,7 +581,7 @@ export const informacionAdicional = [
     title: 'Válvula Política',
     description:
       'Medio venezolano que sigue de cerca el terremoto: cifras de fallecidos en Tucacas, listados de pacientes en hospitales de Caracas y la exigencia de luto nacional y transparencia informativa al gobierno.',
-    href: 'https://valvulapolitica.com/home/',
+    href: 'https://valvulapolitica.com/concluyen-labores-de-busqueda-en-tucacas-se-eleva-a-12-la-cifra-de-fallecidos-tras-colapso-de-edificacion/',
     instagram: 'https://www.instagram.com/valvulapolitica/',
   },
   {
@@ -578,7 +589,7 @@ export const informacionAdicional = [
     title: 'Cazadores de Fake News',
     description:
       'ONG venezolana de verificación e investigación digital (OSINT). Desmiente la desinformación sobre el terremoto —como las cifras infladas de fallecidos o el “doblete sísmico”— para que decidas y dones con datos reales, no con rumores ni mentiras.',
-    href: 'https://www.cazadores.info/',
+    href: 'https://www.cazadores.info/usgs-10-100-mil-estimacion/',
     instagram: 'https://www.instagram.com/cazamosfakenews/',
   },
   {
@@ -590,12 +601,12 @@ export const informacionAdicional = [
     instagram: 'https://twitter.com/ineetweets',
   },
   {
-    tag: 'Derechos digitales',
-    title: 'Acceso Libre',
+    tag: 'Noticias',
+    title: 'Efecto Cocuyo',
     description:
-      'Organización venezolana que defiende la libertad de expresión, la privacidad y el acceso a la información en internet frente a la vigilancia y la censura del régimen. Investiga bloqueos, forma a las comunidades en seguridad digital y está detrás del mapa ciudadano terremotoVE, con una política de datos que detalla cómo protege la información de las personas afectadas.',
-    href: 'https://acceso-libre.org/',
-    instagram: 'https://x.com/AccesoLibreRed',
+      'Medio independiente venezolano que cubre el terremoto con datos verificados: balance de víctimas, labores de rescate, refugios y servicios afectados, frente a la desinformación y el silencio oficial.',
+    href: 'https://efectococuyo.com/la-humanidad/semana-doblete-sismico-dicen-los-expertos/',
+    instagram: 'https://www.instagram.com/efecto.cocuyo/',
   },
   {
     tag: 'Enciclopedia',
@@ -625,14 +636,6 @@ export const prensa = [
     x: 'https://x.com/iamGermania',
     instagram: 'https://www.instagram.com/iamgermania',
     youtube: 'https://www.youtube.com/@iamgermania',
-  },
-  {
-    tag: 'Periodista',
-    title: 'Noelia Belén Izarza',
-    description:
-      'Periodista que reporta sobre la emergencia y la actualidad de Venezuela a través de su cuenta de X.',
-    href: 'https://x.com/noeliaizarza',
-    x: 'https://x.com/noeliaizarza',
   },
   {
     tag: 'Periodista',
@@ -712,14 +715,6 @@ export const prensa = [
   },
   {
     tag: 'Periodista',
-    title: 'Michel Baljet',
-    description:
-      'Periodista que cubre la actualidad de Venezuela y la emergencia del terremoto; comparte información en su cuenta de X.',
-    href: 'https://x.com/MichelBaljet',
-    x: 'https://x.com/MichelBaljet',
-  },
-  {
-    tag: 'Periodista',
     title: 'María Valentina',
     description:
       'Periodista que informa sobre la emergencia del terremoto y la actualidad de Venezuela en Instagram.',
@@ -746,73 +741,12 @@ export const prensa = [
     instagram: 'https://www.instagram.com/maibortpetit/',
   },
   {
-    tag: 'Opinión',
-    title: 'Claret Sandoval',
-    description:
-      'Comparte opiniones y análisis sobre la emergencia del terremoto y la actualidad de Venezuela en Instagram.',
-    href: 'https://www.instagram.com/claret_sandoval1/',
-    socials: ['https://www.instagram.com/claret_sandoval1/'],
-  },
-  {
-    tag: 'Opinión',
-    title: 'Johanna Peña',
-    description:
-      'Publica opiniones sobre la emergencia del terremoto y la actualidad de Venezuela en Instagram.',
-    href: 'https://www.instagram.com/joalesstoks/',
-    socials: ['https://www.instagram.com/joalesstoks/'],
-  },
-  {
-    tag: 'Análisis en inglés',
-    title: 'Alex_TVzla',
-    description:
-      'Abogado e historiador (Harvard Law | Stanford) que explica Venezuela y el terremoto en inglés, sin propaganda, en su podcast y redes.',
-    href: 'https://x.com/at_tvzla',
-    x: 'https://x.com/at_tvzla',
-    youtube: 'https://www.youtube.com/@at_tvzla',
-    instagram: 'https://www.instagram.com/at_tvzla/',
-  },
-  {
-    tag: 'Derechos humanos',
-    title: 'Tamara Suju',
-    description:
-      'Abogada defensora de derechos humanos y directora ejecutiva del Casla Institute; documenta la situación de Venezuela y da seguimiento a la emergencia del terremoto en X e Instagram.',
-    href: 'https://x.com/TAMARA_SUJU',
-    x: 'https://x.com/TAMARA_SUJU',
-    instagram: 'https://www.instagram.com/tamysur/',
-  },
-  {
-    tag: 'Periodista',
-    title: 'Alejandra Oraa',
-    description:
-      'Periodista y presentadora que cubre la actualidad de Venezuela y la emergencia del terremoto; activa en X, Instagram y su sitio web.',
-    href: 'https://x.com/alejandraoraa',
-    x: 'https://x.com/alejandraoraa',
-    instagram: 'https://www.instagram.com/alejandraoraa',
-    website: 'https://alejandraoraa.net/',
-  },
-  {
     tag: 'Periodista',
     title: 'Luis Carlos Díaz',
     description:
       'Periodista y activista de derechos digitales que sigue la actualidad de Venezuela y la emergencia del terremoto, con foco en tecnología, redes y libertad de información.',
     href: 'https://x.com/LuisCarlos',
     x: 'https://x.com/LuisCarlos',
-  },
-  {
-    tag: 'Corresponsal',
-    title: 'Marcos G Morin Aguirre',
-    description:
-      'Corresponsal en Caracas de La FM (RCN, Colombia), reportero gráfico y locutor; cubre la actualidad de Venezuela y la emergencia del terremoto en X.',
-    href: 'https://x.com/Mmorin_informa',
-    x: 'https://x.com/Mmorin_informa',
-  },
-  {
-    tag: 'Corresponsal',
-    title: 'Catherine Ellis',
-    description:
-      'Periodista británica que cubre Colombia y Venezuela; actualmente en el país informando sobre la emergencia del terremoto en X.',
-    href: 'https://x.com/Cat_lucy1',
-    x: 'https://x.com/Cat_lucy1',
   },
 ] satisfies PeriodistaRaw[]
 
