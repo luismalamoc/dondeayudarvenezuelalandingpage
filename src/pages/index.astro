@@ -9,6 +9,7 @@ import {
   informacionAdicional,
   buildDirectory,
 } from '../data/directory'
+import { withUtm } from '../lib/links'
 import '../styles/global.css'
 
 const directory = buildDirectory()
@@ -147,7 +148,7 @@ const jsonLd = {
               <div class="group relative flex flex-col rounded-xl bg-navy p-6 text-white transition hover:bg-navy-700">
                 <span class="text-xl font-black">
                   <a
-                    href={accion.href}
+                    href={withUtm(accion.href)}
                     target="_blank"
                     rel="noopener noreferrer"
                     class="after:absolute after:inset-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amarillo"
@@ -256,7 +257,7 @@ const jsonLd = {
           cada organización y te mostramos el dominio real antes de que salgas. Para ver qué trampas
           evitar antes de transferir, lee{' '}
           <a
-            href="https://donarseguro.com/dinero/seguridad"
+            href={withUtm('https://donarseguro.com/dinero/seguridad')}
             target="_blank"
             rel="noopener noreferrer"
             class="font-semibold text-navy underline hover:text-navy-700"
@@ -327,7 +328,7 @@ const jsonLd = {
             target="_blank"
             rel="noopener noreferrer"
             class="font-semibold text-slate-600 hover:text-navy">GitHub</a
-          >, o escríbenos a{' '}
+          >, o escribe a{' '}
           <a
             href="mailto:luismalamoc@gmail.com"
             class="font-semibold text-slate-600 hover:text-navy">luismalamoc@gmail.com</a

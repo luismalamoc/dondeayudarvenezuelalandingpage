@@ -1,6 +1,7 @@
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import type { Categoria, DirectoryItem } from '../data/directory'
+import { withUtm } from '../lib/links'
 
 const ALPHABET = ['#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')]
 
@@ -56,7 +57,7 @@ function LetterGroup({ letter, entries }: { letter: string; entries: DirectoryIt
               }
             >
               <a
-                href={item.href}
+                href={withUtm(item.href)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={

@@ -138,6 +138,14 @@ export const portales = [
     href: 'https://donarseguro.com/',
     instagram: 'https://www.instagram.com/ea_fuenmayor/',
   },
+  {
+    tag: 'Guía completa',
+    title: 'Apoya Venezuela',
+    description:
+      'Directorio que recopila recursos verificados tras el terremoto: dónde donar, salud y telemedicina, apoyo psicológico, inspección de estructuras, búsqueda de personas, coordinación de ayuda, mascotas, envío de remesas y voluntariado. Incluye una guía para donar desde España con deducción fiscal.',
+    href: 'https://apoyavenezuela.org/',
+    instagram: 'https://www.instagram.com/apoyavenezuela.app/',
+  },
 ] satisfies PortalRaw[]
 
 export const otrasDonaciones = [

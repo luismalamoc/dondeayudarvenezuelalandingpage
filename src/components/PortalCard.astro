@@ -1,4 +1,6 @@
 ---
+import { withUtm } from '../lib/links'
+
 interface Props {
   title: string
   description: string
@@ -10,6 +12,7 @@ interface Props {
 }
 
 const { title, description, href, tag, variant = 'default', cta, instagram } = Astro.props
+const outboundHref = withUtm(href)
 const domain = new URL(href).hostname.replace(/^www\./, '')
 const isAlerta = variant === 'alerta'
 const ctaLabel = cta ?? (isAlerta ? 'Por qué evitarla' : 'Visitar')
@@ -36,7 +39,7 @@ const socialHandle = instagram
   </span>
   <h3 class={`text-lg font-black ${isAlerta ? 'text-red-700' : 'text-navy'}`}>
     <a
-      href={href}
+      href={outboundHref}
       target="_blank"
       rel="noopener noreferrer"
       class="after:absolute after:inset-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
