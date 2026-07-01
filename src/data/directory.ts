@@ -243,6 +243,15 @@ export const otrasDonaciones = [
     instagram: 'https://www.instagram.com/redcrosscanada/',
   },
   {
+    tag: 'Cruz Roja Española',
+    title: 'Cruz Roja Española — Ayuda terremoto Venezuela',
+    description:
+      'Campaña de la Cruz Roja Española para el terremoto de Venezuela 2026: canaliza donaciones para asistencia humanitaria a las personas afectadas. Es la Cruz Roja de España, independiente de la venezolana.',
+    href: 'https://www2.cruzroja.es/-/ayuda-terremoto-venezuela-2026',
+    instagram: 'https://www.instagram.com/cruzrojaesp/',
+    socials: ['https://x.com/CruzRojaEsp'],
+  },
+  {
     tag: 'Topos',
     title: 'Brigada de Rescate Topos Tlaltelolco',
     description:
@@ -485,6 +494,7 @@ export const advertencias = [
     description:
       'Desde agosto de 2023, el Tribunal Supremo de Justicia intervino la Cruz Roja Venezolana, cesó a su directiva y designó una junta reestructuradora. Al perder su independencia frente al régimen, dejó de ser un canal humanitario neutral: te recomendamos no donar a través de ella.',
     href: 'https://lapatilla.com/2023/08/10/ong-ven-intervencion-chavista-de-la-cruz-roja-venezolana-como-un-grave-precedente/',
+    socials: ['https://x.com/at_tvzla/status/2072450052396622087'],
   },
 ] satisfies PortalRaw[]
 
