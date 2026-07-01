@@ -426,6 +426,14 @@ export const otrasDonaciones = [
     instagram: 'https://www.instagram.com/bomberoschileoficial/',
   },
   {
+    tag: 'Rescate USAR',
+    title: 'Bomberos GIRECAN',
+    description:
+      'Grupo Internacional de Rescate ante Catástrofes Naturales (España), equipo USAR ligero con unidad canina K9 que se desplegó en Venezuela tras el terremoto. Se financia con colaboraciones privadas: tu aporte por Bizum o transferencia ayuda a costear herramientas, transporte y material canino para poder activarse en las primeras horas, que son vitales.',
+    href: 'https://bomberosgirecan.es/colabora/',
+    instagram: 'https://www.instagram.com/bomberos_girecan/',
+  },
+  {
     tag: 'Colombia',
     title: 'Fundación TAAP',
     description:
@@ -543,28 +551,11 @@ export const informacionAdicional = [
     instagram: 'https://www.instagram.com/elestimulo/',
   },
   {
-    tag: 'Rescate urbano',
-    title: 'USAR Bomberos de Chile',
+    tag: 'Rescate internacional',
+    title: 'Equipos internacionales de rescate (USAR)',
     description:
-      'Página oficial del grupo de Búsqueda y Rescate Urbano (USAR) de Bomberos de Chile, acreditado bajo la metodología INSARAG. Su equipo se desplegó en Venezuela tras el terremoto para las labores de búsqueda y rescate; aquí puedes seguir su trabajo y noticias.',
-    href: 'https://www.bomberos.cl/usar',
-    instagram: 'https://www.instagram.com/bomberoschileoficial/',
-  },
-  {
-    tag: 'Rescate urbano',
-    title: 'Bomberos GIRECAN',
-    description:
-      'Grupo Internacional de Rescate ante Catástrofes Naturales (España): equipo USAR ligero con guías caninos K9, médicos y bomberos, acreditado bajo la metodología INSARAG. Se desplegó en Venezuela para las labores de búsqueda y rescate tras el terremoto.',
-    href: 'https://bomberosgirecan.es/featured-content/equipo-usar-bomberos-girecan/',
-    x: 'https://x.com/BomberosGIRECAN',
-  },
-  {
-    tag: 'Rescate urbano',
-    title: 'Bomberos y Rescate de Chequia (HZS ČR)',
-    description:
-      'Cuerpo de Bomberos y Rescate de la República Checa. Su equipo USAR se desplegó en Venezuela tras el terremoto y rescató a víctimas atrapadas entre los escombros, con apoyo psicológico a los familiares en el lugar.',
-    href: 'https://hzscr.gov.cz/',
-    x: 'https://x.com/hasici_cr',
+      'A petición del gobierno y con la coordinación de la ONU (OCHA), 44 equipos internacionales de búsqueda y rescate urbano (USAR) —2.245 especialistas y 140 perros— se desplegaron tras el terremoto. Provienen de Argentina, Brasil, Canadá, Chile, Colombia, Ecuador, El Salvador, Guatemala, México, Panamá, Perú, República Dominicana, Alemania, Chequia, España, Estados Unidos, Francia, Italia, Jordania, Lituania, Países Bajos, Catar, Reino Unido, Serbia, Siria, Suiza y Türkiye.',
+    href: 'https://reliefweb.int/report/venezuela-bolivarian-republic/venezuela-earthquakes-urban-search-and-rescue-usar-team-snapshot-27-june',
   },
   {
     tag: 'Noticias',
