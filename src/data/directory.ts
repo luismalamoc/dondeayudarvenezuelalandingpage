@@ -48,9 +48,17 @@ export const acciones = [
     instagram: 'https://www.instagram.com/yummyridesvzla/',
   },
   {
-    title: 'Denunciar',
-    description: 'Documenta abusos e irregularidades ocurridos durante la emergencia.',
-    href: 'https://denunciavenezuela.com/',
+    title: 'Efecto Red',
+    description:
+      'Conéctate gratis por WhatsApp con profesionales voluntarios: salud mental, médicos, ingenieros, alojamiento temporal y apoyo a niños, dentro y fuera de Venezuela.',
+    href: 'https://efecto-red.com/',
+  },
+  {
+    title: 'Yummy Héroes',
+    description:
+      'Traslados gratis para quienes están en primera línea: médicos, bomberos, policías, rescatistas, Protección Civil, periodistas y más, con descuento automático de hasta $10.',
+    href: 'https://heroes.yummyrides.com/',
+    instagram: 'https://www.instagram.com/yummyridesvzla/',
   },
 ] satisfies AccionRaw[]
 
@@ -71,11 +79,11 @@ export const portales = [
     instagram: 'https://www.instagram.com/terremotovenezuelaredes/',
   },
   {
-    tag: 'Profesionales',
-    title: 'Efecto Red',
+    tag: 'Denuncias',
+    title: 'Denuncia Venezuela',
     description:
-      'Conéctate gratis por WhatsApp con voluntarios: salud mental, médicos, ingenieros, alojamiento temporal y apoyo a niños.',
-    href: 'https://efecto-red.com/',
+      'Plataforma ciudadana, independiente y sin fines de lucro para documentar y difundir denuncias durante la emergencia: robos a víctimas, desvío y bloqueo de ayuda humanitaria y abusos de poder. Modera los testimonios y los hace públicos para su revisión.',
+    href: 'https://denunciavenezuela.com/',
   },
   {
     tag: 'Salud mental',
@@ -98,14 +106,6 @@ export const portales = [
       'Mapa de puntos de internet satelital gratuito y teléfonos de emergencia para coordinar la ayuda.',
     href: 'https://www.reconectavenezuela.com/',
     instagram: 'https://www.instagram.com/reconectavenezuela.wifi/',
-  },
-  {
-    tag: 'Primera línea',
-    title: 'Yummy Héroes',
-    description:
-      'Traslados gratuitos para médicos, paramédicos, bomberos, rescatistas, policías y periodistas.',
-    href: 'https://heroes.yummyrides.com/',
-    instagram: 'https://www.instagram.com/yummyridesvzla/',
   },
   {
     tag: 'Coordinación',
@@ -425,6 +425,30 @@ export const otrasDonaciones = [
     href: 'https://donarabomberos.cl/',
     instagram: 'https://www.instagram.com/bomberoschileoficial/',
   },
+  {
+    tag: 'Colombia',
+    title: 'Fundación TAAP',
+    description:
+      'Fundación colombiana (Bogotá) que desde el primer día coordinó la respuesta ciudadana al terremoto: reconectó a miles de familias con sus desaparecidos, envió misiones médicas a hospitales colapsados y despachó decenas de toneladas de ayuda a Caracas, La Guaira y Caraballeda. Dona en pesos colombianos.',
+    href: 'https://donaronline.org/fundacion-taap/nuestra-amistaap',
+    instagram: 'https://www.instagram.com/fundaciontaap',
+  },
+  {
+    tag: 'Rescate aéreo',
+    title: 'Patrulla Aérea Civil Colombiana',
+    description:
+      'Organización colombiana sin ánimo de lucro con 60 años llevando atención médica por vía aérea a zonas remotas y víctimas de catástrofes. Moviliza médicos, insumos y ayuda humanitaria a las comunidades afectadas por el terremoto; cada vuelo lleva personal de salud y rescatistas. Dona en pesos colombianos.',
+    href: 'https://donaronline.org/patrulla-aerea-civil-colombiana/salvemos-vidas-en-venezuela',
+    instagram: 'https://www.instagram.com/patrullaaereacivilcolombia/',
+  },
+  {
+    tag: 'Naciones Unidas',
+    title: 'ONU — Fondo Humanitario para Venezuela',
+    description:
+      'Campaña de UN Crisis Relief, gestionada por la Oficina de la ONU para la Coordinación de Asuntos Humanitarios (OCHA). Las donaciones van al Fondo Humanitario para Venezuela, que trabaja con decenas de ONG locales y equipos de respuesta para llevar salud, agua segura, alimentos, refugio y educación a las familias afectadas por el terremoto.',
+    href: 'https://crisisrelief.un.org/en/donate-venezuela-crisis',
+    instagram: 'https://www.instagram.com/ocha_venezuela/',
+  },
 ] satisfies PortalRaw[]
 
 export const advertencias = [
@@ -461,6 +485,14 @@ export const informacionAdicional = [
       'Portal de Earthdata GIS de la NASA con imágenes y datos satelitales del terremoto. Con la misión NISAR mapean cómo los sismos desplazaron la superficie del terreno, información clave para los equipos de respuesta y científicos.',
     href: 'https://gis.earthdata.nasa.gov/portal/home/group.html?sortField=added&sortOrder=desc&id=4d46fcec8d7e459da094129317ab78dd#content',
     instagram: 'https://www.instagram.com/nasa/',
+  },
+  {
+    tag: 'Cartografía',
+    title: 'MapAction',
+    description:
+      'Organización benéfica de cartografía humanitaria. A petición de la ONU (UNDAC) envió cartógrafos hispanohablantes a Venezuela para producir mapas del terremoto —densidad de población, daños en edificios, hospitales activos e intensidad sísmica— que orientan a los equipos de búsqueda y rescate y la entrega de ayuda.',
+    href: 'https://maps.mapaction.org/event/2026-ven-001',
+    x: 'https://x.com/mapaction',
   },
   {
     tag: 'Internet libre',
@@ -519,6 +551,22 @@ export const informacionAdicional = [
     instagram: 'https://www.instagram.com/bomberoschileoficial/',
   },
   {
+    tag: 'Rescate urbano',
+    title: 'Bomberos GIRECAN',
+    description:
+      'Grupo Internacional de Rescate ante Catástrofes Naturales (España): equipo USAR ligero con guías caninos K9, médicos y bomberos, acreditado bajo la metodología INSARAG. Se desplegó en Venezuela para las labores de búsqueda y rescate tras el terremoto.',
+    href: 'https://bomberosgirecan.es/featured-content/equipo-usar-bomberos-girecan/',
+    x: 'https://x.com/BomberosGIRECAN',
+  },
+  {
+    tag: 'Rescate urbano',
+    title: 'Bomberos y Rescate de Chequia (HZS ČR)',
+    description:
+      'Cuerpo de Bomberos y Rescate de la República Checa. Su equipo USAR se desplegó en Venezuela tras el terremoto y rescató a víctimas atrapadas entre los escombros, con apoyo psicológico a los familiares en el lugar.',
+    href: 'https://hzscr.gov.cz/',
+    x: 'https://x.com/hasici_cr',
+  },
+  {
     tag: 'Noticias',
     title: 'Araguaney News',
     description:
@@ -541,6 +589,14 @@ export const informacionAdicional = [
       'ONG venezolana de verificación e investigación digital (OSINT). Desmiente la desinformación sobre el terremoto —como las cifras infladas de fallecidos o el “doblete sísmico”— para que decidas y dones con datos reales, no con rumores ni mentiras.',
     href: 'https://www.cazadores.info/',
     instagram: 'https://www.instagram.com/cazamosfakenews/',
+  },
+  {
+    tag: 'Educación',
+    title: 'INEE — Foco de crisis: Venezuela',
+    description:
+      'Página de la INEE (Red Interagencial para la Educación en Emergencias) sobre el terremoto: antecedentes con datos verificados de daños en escuelas, organizaciones aliadas y recursos de educación, apoyo psicosocial y protección de la niñez para estudiantes y docentes afectados.',
+    href: 'https://inee.org/es/foco-de-crisis-venezuela',
+    instagram: 'https://twitter.com/ineetweets',
   },
   {
     tag: 'Derechos digitales',
@@ -750,6 +806,22 @@ export const prensa = [
       'Periodista y activista de derechos digitales que sigue la actualidad de Venezuela y la emergencia del terremoto, con foco en tecnología, redes y libertad de información.',
     href: 'https://x.com/LuisCarlos',
     x: 'https://x.com/LuisCarlos',
+  },
+  {
+    tag: 'Corresponsal',
+    title: 'Marcos G Morin Aguirre',
+    description:
+      'Corresponsal en Caracas de La FM (RCN, Colombia), reportero gráfico y locutor; cubre la actualidad de Venezuela y la emergencia del terremoto en X.',
+    href: 'https://x.com/Mmorin_informa',
+    x: 'https://x.com/Mmorin_informa',
+  },
+  {
+    tag: 'Corresponsal',
+    title: 'Catherine Ellis',
+    description:
+      'Periodista británica que cubre Colombia y Venezuela; actualmente en el país informando sobre la emergencia del terremoto en X.',
+    href: 'https://x.com/Cat_lucy1',
+    x: 'https://x.com/Cat_lucy1',
   },
 ] satisfies PeriodistaRaw[]
 
