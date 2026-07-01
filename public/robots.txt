@@ -1,4 +1,37 @@
 User-agent: *
 Allow: /
 
+# Asistentes de IA y rastreadores de modelos de lenguaje: acceso permitido.
+# Sitio de utilidad publica tras el terremoto de Venezuela (junio 2026);
+# queremos que la informacion sea facil de descubrir y citar.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://dondeayudarvenezuela.com/sitemap-index.xml

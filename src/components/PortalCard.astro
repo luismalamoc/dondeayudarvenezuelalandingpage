@@ -72,6 +72,7 @@ const primarySocial = socials[0]
 ---
 
 <div
+  role="listitem"
   class={`group relative flex flex-col rounded-xl border p-6 transition focus-within:shadow-lg ${
     isAlerta
       ? 'border-red-300 bg-red-50 hover:border-red-500 hover:shadow-lg'
@@ -206,7 +207,7 @@ const primarySocial = socials[0]
   }
   <span
     class={`mt-2 inline-flex items-center gap-1.5 text-xs font-medium ${
-      isAlerta ? 'text-red-400' : 'text-slate-400'
+      isAlerta ? 'text-red-500' : 'text-slate-500'
     }`}
   >
     <svg
