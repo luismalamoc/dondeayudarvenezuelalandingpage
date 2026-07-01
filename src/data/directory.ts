@@ -11,9 +11,16 @@ export interface PortalRaw {
   description: string
   href: string
   instagram?: string
+  socials?: string[]
 }
 
-export type Categoria = 'Acción' | 'Ayuda' | 'Donar' | 'Info' | 'Evitar'
+export interface PeriodistaRaw extends PortalRaw {
+  x?: string
+  youtube?: string
+  website?: string
+}
+
+export type Categoria = 'Acción' | 'Ayuda' | 'Donar' | 'Info' | 'Evitar' | 'Prensa'
 
 export interface DirectoryItem {
   title: string
@@ -183,6 +190,13 @@ export const portales = [
       'Red comunitaria para reencontrar mascotas perdidas, encontradas o con necesidad médica tras el terremoto. Busca por zona en el mapa, reporta casos y accede a un directorio de clínicas veterinarias 24 h y fundaciones de rescate animal.',
     href: 'https://migenteve.com/',
   },
+  {
+    tag: 'Insumos',
+    title: 'De Mano en Mano',
+    description:
+      'Herramienta humanitaria sin fines de lucro que muestra en tiempo real los insumos que necesitan hospitales, refugios y comunidades verificados tras el terremoto. Es de solo lectura: revisa qué hace falta en cada punto y, si puedes, llévalo directamente.',
+    href: 'https://www.demanoenmanove.org/',
+  },
 ] satisfies PortalRaw[]
 
 export const otrasDonaciones = [
@@ -289,6 +303,7 @@ export const otrasDonaciones = [
       'Campaña de Give Pan de Vida y la UCV Firefighters Foundation para comprar equipos de rescate de entrega inmediata en Caracas.',
     href: 'https://donorbox.org/emergency-relief-for-venezuela-s-earthquake-survivors',
     instagram: 'https://www.instagram.com/givepandevida/',
+    socials: ['https://www.instagram.com/ucvfirefighters/'],
   },
   {
     tag: 'Iglesia Católica',
@@ -544,6 +559,200 @@ export const informacionAdicional = [
   },
 ] satisfies PortalRaw[]
 
+export const prensa = [
+  {
+    tag: 'Periodista',
+    title: 'David Alandete',
+    description:
+      'Periodista y analista que sigue de cerca la actualidad venezolana y la emergencia del terremoto; comparte reportería y análisis en sus redes.',
+    href: 'https://x.com/alandete',
+    x: 'https://x.com/alandete',
+    instagram: 'https://www.instagram.com/alandete/',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Germania Rodríguez Poleo',
+    description:
+      'Periodista que cubre la crisis de Venezuela y el terremoto; publica información y entrevistas en X, Instagram y YouTube.',
+    href: 'https://x.com/iamGermania',
+    x: 'https://x.com/iamGermania',
+    instagram: 'https://www.instagram.com/iamgermania',
+    youtube: 'https://www.youtube.com/@iamgermania',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Noelia Belén Izarza',
+    description:
+      'Periodista que reporta sobre la emergencia y la actualidad de Venezuela a través de su cuenta de X.',
+    href: 'https://x.com/noeliaizarza',
+    x: 'https://x.com/noeliaizarza',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Melanio Escobar',
+    description:
+      'Periodista y comunicador enfocado en libertad de expresión; cubre el terremoto y la situación de Venezuela en X y su canal de YouTube.',
+    href: 'https://x.com/MelanioBar',
+    x: 'https://x.com/MelanioBar',
+    youtube: 'https://www.youtube.com/@melaniobar',
+  },
+  {
+    tag: 'Periodista',
+    title: 'David Placer',
+    description:
+      'Periodista que analiza la actualidad de Venezuela y la emergencia del terremoto; publica en X, Instagram y su canal de YouTube.',
+    href: 'https://x.com/dplacer',
+    x: 'https://x.com/dplacer',
+    instagram: 'https://www.instagram.com/davidplacer/',
+    youtube: 'https://www.youtube.com/@DavidPlacer',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Goizeder Azúa',
+    description:
+      'Periodista que informa sobre Venezuela y la emergencia del terremoto; comparte coberturas y análisis en X, Instagram y YouTube.',
+    href: 'https://x.com/goiazua',
+    x: 'https://x.com/goiazua',
+    instagram: 'https://www.instagram.com/goiazua/',
+    youtube: 'https://www.youtube.com/@goiazua',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Sergio Novelli',
+    description:
+      'Periodista y presentador que sigue la actualidad de Venezuela y el terremoto en sus redes y su canal de YouTube.',
+    href: 'https://x.com/SergioNovelliE',
+    x: 'https://x.com/SergioNovelliE',
+    instagram: 'https://www.instagram.com/sergionovelli/',
+    youtube: 'https://www.youtube.com/@SergioNovelliOficial',
+  },
+  {
+    tag: 'Cobertura en vivo',
+    title: 'Venezuela EN VIVO (Santiago Rafael)',
+    description:
+      'Canal de Santiago Rafael, politólogo que transmite en vivo durante horas la cobertura del terremoto y la actualidad venezolana en YouTube.',
+    href: 'https://www.youtube.com/@VenezuelaENVIVO11',
+    youtube: 'https://www.youtube.com/@VenezuelaENVIVO11',
+    x: 'https://x.com/SantiagoRafa11',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Carla Angola',
+    description:
+      'Periodista y presentadora que cubre la actualidad de Venezuela y la emergencia del terremoto; activa en X e Instagram.',
+    href: 'https://x.com/carlaangola',
+    x: 'https://x.com/carlaangola',
+    instagram: 'https://www.instagram.com/carlaangola/',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Gladys Rodríguez',
+    description:
+      'Periodista que informa sobre la crisis de Venezuela y el terremoto; publica en X, Instagram y su canal de YouTube.',
+    href: 'https://x.com/rodriguezgladys',
+    x: 'https://x.com/rodriguezgladys',
+    instagram: 'https://www.instagram.com/rodriguez_gladys/',
+    youtube: 'https://www.youtube.com/@gladysrodriguezoficial',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Maryorin Méndez',
+    description:
+      'Periodista que reporta sobre la emergencia y la actualidad de Venezuela en X e Instagram.',
+    href: 'https://x.com/maryorinmendez',
+    x: 'https://x.com/maryorinmendez',
+    instagram: 'https://www.instagram.com/maryorin_mendez/',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Michel Baljet',
+    description:
+      'Periodista que cubre la actualidad de Venezuela y la emergencia del terremoto; comparte información en su cuenta de X.',
+    href: 'https://x.com/MichelBaljet',
+    x: 'https://x.com/MichelBaljet',
+  },
+  {
+    tag: 'Periodista',
+    title: 'María Valentina',
+    description:
+      'Periodista que informa sobre la emergencia del terremoto y la actualidad de Venezuela en Instagram.',
+    href: 'https://www.instagram.com/marivalecomunica/',
+    socials: ['https://www.instagram.com/marivalecomunica/'],
+  },
+  {
+    tag: 'Cobertura en vivo',
+    title: 'Bowery Newsroom - Guarimba Digital',
+    description:
+      'Proyecto de streaming de Gaston Levar (BoweryTV), autor de "El Poder del Streaming", que transmite en vivo durante horas la cobertura del terremoto y la actualidad de Venezuela en YouTube.',
+    href: 'https://www.youtube.com/@bowerytv',
+    youtube: 'https://www.youtube.com/@bowerytv',
+    x: 'https://x.com/GastonLevar',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Maibort Petit',
+    description:
+      'Investigadora y periodista que cubre la corrupción y la actualidad de Venezuela, incluida la emergencia del terremoto; publica en X, YouTube e Instagram.',
+    href: 'https://x.com/maibortpetit',
+    x: 'https://x.com/maibortpetit',
+    youtube: 'https://www.youtube.com/channel/UCUC9reOFgPwTagT4L5tpTyg',
+    instagram: 'https://www.instagram.com/maibortpetit/',
+  },
+  {
+    tag: 'Opinión',
+    title: 'Claret Sandoval',
+    description:
+      'Comparte opiniones y análisis sobre la emergencia del terremoto y la actualidad de Venezuela en Instagram.',
+    href: 'https://www.instagram.com/claret_sandoval1/',
+    socials: ['https://www.instagram.com/claret_sandoval1/'],
+  },
+  {
+    tag: 'Opinión',
+    title: 'Johanna Peña',
+    description:
+      'Publica opiniones sobre la emergencia del terremoto y la actualidad de Venezuela en Instagram.',
+    href: 'https://www.instagram.com/joalesstoks/',
+    socials: ['https://www.instagram.com/joalesstoks/'],
+  },
+  {
+    tag: 'Análisis en inglés',
+    title: 'Alex_TVzla',
+    description:
+      'Abogado e historiador (Harvard Law | Stanford) que explica Venezuela y el terremoto en inglés, sin propaganda, en su podcast y redes.',
+    href: 'https://x.com/at_tvzla',
+    x: 'https://x.com/at_tvzla',
+    youtube: 'https://www.youtube.com/@at_tvzla',
+    instagram: 'https://www.instagram.com/at_tvzla/',
+  },
+  {
+    tag: 'Derechos humanos',
+    title: 'Tamara Suju',
+    description:
+      'Abogada defensora de derechos humanos y directora ejecutiva del Casla Institute; documenta la situación de Venezuela y da seguimiento a la emergencia del terremoto en X e Instagram.',
+    href: 'https://x.com/TAMARA_SUJU',
+    x: 'https://x.com/TAMARA_SUJU',
+    instagram: 'https://www.instagram.com/tamysur/',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Alejandra Oraa',
+    description:
+      'Periodista y presentadora que cubre la actualidad de Venezuela y la emergencia del terremoto; activa en X, Instagram y su sitio web.',
+    href: 'https://x.com/alejandraoraa',
+    x: 'https://x.com/alejandraoraa',
+    instagram: 'https://www.instagram.com/alejandraoraa',
+    website: 'https://alejandraoraa.net/',
+  },
+  {
+    tag: 'Periodista',
+    title: 'Luis Carlos Díaz',
+    description:
+      'Periodista y activista de derechos digitales que sigue la actualidad de Venezuela y la emergencia del terremoto, con foco en tecnología, redes y libertad de información.',
+    href: 'https://x.com/LuisCarlos',
+    x: 'https://x.com/LuisCarlos',
+  },
+] satisfies PeriodistaRaw[]
+
 function domainFromHref(href: string): string {
   try {
     return new URL(href).hostname.replace(/^www\./, '')
@@ -568,6 +777,13 @@ function handleFor(instagram?: string): string {
   }
 }
 
+function socialsFor(item: AccionRaw | PortalRaw): string[] {
+  const p = item as Partial<PeriodistaRaw>
+  return [p.x, p.instagram, p.youtube, p.website, ...(p.socials ?? [])].filter(
+    (url): url is string => Boolean(url),
+  )
+}
+
 function letterFor(title: string): string {
   const first = title
     .normalize('NFD')
@@ -585,23 +801,25 @@ export function buildDirectory(): DirectoryItem[] {
     { categoria: 'Donar', items: otrasDonaciones },
     { categoria: 'Evitar', items: advertencias },
     { categoria: 'Info', items: informacionAdicional },
+    { categoria: 'Prensa', items: prensa },
   ]
 
   return groups
     .flatMap(({ categoria, items }) =>
-      items.map(
-        (item): DirectoryItem => ({
+      items.map((item): DirectoryItem => {
+        const socials = socialsFor(item)
+        return {
           title: item.title,
           description: item.description,
           href: item.href,
           tag: 'tag' in item ? item.tag : undefined,
-          instagram: item.instagram,
+          instagram: socials[0],
           categoria,
           domain: domainFromHref(item.href),
           letter: letterFor(item.title),
-          search: normalizeText(`${item.title} ${handleFor(item.instagram)}`),
-        }),
-      ),
+          search: normalizeText(`${item.title} ${socials.map(handleFor).join(' ')}`),
+        }
+      }),
     )
     .sort((a, b) => a.title.localeCompare(b.title, 'es', { sensitivity: 'base' }))
 }

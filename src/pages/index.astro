@@ -7,6 +7,7 @@ import {
   otrasDonaciones,
   advertencias,
   informacionAdicional,
+  prensa,
   buildDirectory,
 } from '../data/directory'
 import { withUtm } from '../lib/links'
@@ -306,6 +307,34 @@ const jsonLd = {
               data-ocultar="Ocultar"
             >
               Ver más ({informacionAdicional.length - 3})
+            </button>
+          )
+        }
+      </section>
+
+      <section class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6">
+        <h2 class="text-2xl font-black text-navy">Quién lo está contando</h2>
+        <p class="mt-2 text-sm leading-6 text-slate-600">
+          Periodistas y comunicadores venezolanos que informan sobre el terremoto y su contexto,
+          muchas veces frente a la censura. Síguelos en sus redes y canales.
+        </p>
+        <div
+          class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          data-collapsible
+          data-collapsed="true"
+        >
+          {prensa.map((persona) => <PortalCard {...persona} />)}
+        </div>
+        {
+          prensa.length > 3 && (
+            <button
+              type="button"
+              class="ver-mas mt-6 inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-navy transition hover:border-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy"
+              aria-expanded="false"
+              data-ver-mas={`Ver más (${prensa.length - 3})`}
+              data-ocultar="Ocultar"
+            >
+              Ver más ({prensa.length - 3})
             </button>
           )
         }

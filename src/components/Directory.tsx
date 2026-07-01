@@ -11,6 +11,7 @@ const CATEGORY_STYLES: Record<Categoria, string> = {
   Donar: 'bg-emerald-100 text-emerald-800',
   Info: 'bg-slate-100 text-slate-700',
   Evitar: 'bg-red-600 text-white',
+  Prensa: 'bg-violet-100 text-violet-800',
 }
 
 function normalize(value: string): string {
