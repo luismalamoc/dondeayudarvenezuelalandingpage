@@ -512,6 +512,7 @@ export const informacionAdicional = [
       'Portal de Earthdata GIS de la NASA con imágenes y datos satelitales del terremoto. Con la misión NISAR mapean cómo los sismos desplazaron la superficie del terreno, información clave para los equipos de respuesta y científicos.',
     href: 'https://gis.earthdata.nasa.gov/portal/home/group.html?sortField=added&sortOrder=desc&id=4d46fcec8d7e459da094129317ab78dd#content',
     instagram: 'https://www.instagram.com/nasa/',
+    socials: ['https://x.com/nasa_es/status/2071979575274353127'],
   },
   {
     tag: 'Cartografía',
