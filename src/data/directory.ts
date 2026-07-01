@@ -747,6 +747,15 @@ export const prensa = [
     href: 'https://x.com/LuisCarlos',
     x: 'https://x.com/LuisCarlos',
   },
+  {
+    tag: 'Cobertura en vivo',
+    title: 'VPItv',
+    description:
+      'Canal de televisión digital independiente venezolano que transmite en vivo la cobertura del terremoto y la actualidad del país en YouTube, con presencia también en Instagram.',
+    href: 'https://vpitv.com/destacados/vpitv-en-vivo/',
+    youtube: 'https://www.youtube.com/@VPITVENVIVO',
+    instagram: 'https://www.instagram.com/vpitv',
+  },
 ] satisfies PeriodistaRaw[]
 
 function domainFromHref(href: string): string {

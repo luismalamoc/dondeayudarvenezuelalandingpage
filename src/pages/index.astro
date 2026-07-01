@@ -103,7 +103,7 @@ const jsonLd = {
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
 
-  <body class="flex min-h-screen flex-col bg-lienzo text-slate-800">
+  <body class="flex min-h-screen flex-col text-slate-800">
     <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div class="mx-auto flex max-w-5xl items-center gap-3 px-4 py-4 sm:px-6">
         <span class="grid size-10 shrink-0 place-items-center rounded-md bg-amarillo text-navy">
@@ -315,8 +315,8 @@ const jsonLd = {
       <section class="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6">
         <h2 class="text-2xl font-black text-navy">Quién lo está contando</h2>
         <p class="mt-2 text-sm leading-6 text-slate-600">
-          Periodistas y comunicadores venezolanos que informan sobre el terremoto y su contexto,
-          muchas veces frente a la censura. Síguelos en sus redes y canales.
+          Periodistas y comunicadores que informan sobre el terremoto y su contexto, muchas veces
+          frente a la censura. Síguelos en sus redes y canales.
         </p>
         <div
           class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
@@ -396,6 +396,18 @@ const jsonLd = {
           if (label) btn.textContent = label
         })
       })
+    </script>
+
+    <script>
+      // Carga la imagen de fondo del araguaney solo después de que la página termine de
+      // cargar y el navegador esté ocioso, para no competir con los recursos críticos.
+      const mostrarFondo = () => document.body.classList.add('fondo-listo')
+      const enIdle = () =>
+        'requestIdleCallback' in window
+          ? requestIdleCallback(mostrarFondo)
+          : setTimeout(mostrarFondo, 200)
+      if (document.readyState === 'complete') enIdle()
+      else window.addEventListener('load', enIdle)
     </script>
   </body>
 </html>

@@ -17,6 +17,26 @@ body {
     ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
+/* Fondo desvanecido del araguaney (árbol nacional de Venezuela).
+   La imagen se inyecta por JS tras cargar la página para no afectar el tiempo de carga. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 700ms ease;
+}
+
+body.fondo-listo::before {
+  background-image: url('/araguaney.jpg');
+  opacity: 0.07;
+}
+
 @keyframes directory-in {
   from {
     opacity: 0;
